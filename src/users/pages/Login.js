@@ -92,10 +92,9 @@ const Login = () => {
       </div>
       <div className="form-control">
         <button type="submit">Submit</button>
-      </div>
-      <div className="form-control">
         <button type="button" onClick={navigateRegister}>Register</button>
       </div>
+      
     </form>
   );
 };
