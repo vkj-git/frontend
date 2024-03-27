@@ -5,7 +5,7 @@ import { LoginContext } from "../../common/components/context";
 import "./Login.css";
 
 const Login = () => {
-  
+  const history = useHistory();
   const loggedin = useContext(LoginContext);
   const [error, setError] = useState(null);
   const [newlogin, setNewlogin] = useState({
