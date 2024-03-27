@@ -1,10 +1,11 @@
 import React, { useState, useContext } from "react";
-
+import {useNavigate} from "react-router-dom";
 import { LoginContext } from "../../common/components/context";
 
 import "./Login.css";
 
 const Login = () => {
+  const navigate = useNavigate();
   const loggedin = useContext(LoginContext);
   const [error, setError] = useState(null);
   const [newlogin, setNewlogin] = useState({
@@ -61,6 +62,9 @@ const Login = () => {
       }
     });
   };
+  const navigateRegister = ()=>{
+    navigate('/register');
+  }
   return (
     <form className="login-form" onSubmit={submitHandler}>
       <div className="form-control">
@@ -88,6 +92,9 @@ const Login = () => {
       </div>
       <div className="form-control">
         <button type="submit">Submit</button>
+      </div>
+      <div className="form-control">
+        <button type="button" onClick={navigateRegister}>Register</button>
       </div>
     </form>
   );
