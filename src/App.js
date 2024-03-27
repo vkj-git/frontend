@@ -11,6 +11,7 @@ import NewLocation from "./locations/pages/NewLocation";
 import MainNavigation from "./common/components/Navigation/MainNavigation";
 import UserLocations from "./locations/pages/UserLocations";
 import Login from "./users/pages/Login";
+import Register from "./users/pages/register";
 import { LoginContext } from "./common/components/context";
 
 const App = () => {
@@ -54,6 +55,9 @@ const App = () => {
         </Route>
         <Route path="/login" exact>
           <Login />
+        </Route>
+      <Route path="/register" exact>
+          <Register />
         </Route>
         <Redirect to="/login" />
       </Switch>
