@@ -63,14 +63,14 @@ form input ,form textarea{
 }
 
 form button{
-    position:absolute;
+/*     position:absolute; */
     border-radius: 50%;
     border:none;
     /* font-size: 1.2rem; */
-    right:5px;
+/*     right:5px;
     top:-10px;
     width: 30px;
-    height:30px;
+    height:30px; */
  cursor:pointer;
 }
 
