@@ -6,7 +6,7 @@ const LocationsItem = (props) => {
     <li className="locationitem">
       <div className="locationitem-content">
         <div className="locationitem-pic">
-          <img src={`http://localhost:5000/${props.pic}`} alt={props.title} />
+          <img src={`https://backend-nine-liard-28.vercel.app/${props.pic}`} alt={props.title} />
         </div>
         <div className="locationitem-infor">
           <h2>{props.title}</h2>
