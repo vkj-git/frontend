@@ -27,7 +27,7 @@ const NewLocation = () => {
 
       //const response = await fetch("http://localhost:5000/api/locations", {
       const response = await fetch(
-        "https://bckend-server.vercel.app/api/locations",
+        "https://backend-nine-liard-28.vercel.app/api/locations",
         {
           method: "POST",
           body: formdata,
